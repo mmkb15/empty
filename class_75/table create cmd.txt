@@ -27,6 +27,16 @@ CREATE TABLE students (
     address VARCHAR(255),
     is_inactive TINYINT DEFAULT 0
 );
+
+
+--create table if not exists users(
+    id int(10) UNSIGNED primary key AUTO_INCREMENT,
+    name VARCHAR(100) not NULL,
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255)
+);
+
+
 -- access table
 describe students 
 --
@@ -35,8 +45,19 @@ describe students
 exit    
 \q
 
+-- CRUD- Create, Read, Update, Delete
 
+insert into students(name, address, email, is_inactive)
+values ("Mina", "Mirpur", "mina@example.com", 0);
 
+insert into students(name, address, email, is_inactive)
+values ("Raju", "Japan", "JapanRaju@example.com", 1);
+
+insert into students(name, address, email, is_inactive)
+values ("Rita", "Canada", "CanadaRita@example.com", 0);
+
+insert into students(name, address, email, is_inactive)
+values ("Lali", "Gabtuli", "deshiCow@example.com", 1);
 
 
 
