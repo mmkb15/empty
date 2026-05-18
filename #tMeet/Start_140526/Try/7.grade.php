@@ -4,7 +4,7 @@
 
 */
 
-$msg = "";
+
 
 if(isset($_POST['submit_btn'])){
     $sel_grade = $_POST['grade'];

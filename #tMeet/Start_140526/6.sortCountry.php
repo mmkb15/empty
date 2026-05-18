@@ -1,10 +1,4 @@
 <?php
-/* 
-Create an associative array of 5 elements 
-where index (key) = Country Name 
-and value = Capital Name.
-Sort by Country Name and Print.
-*/
 
 // Step 1: Create Associative Array
 $countries = [
