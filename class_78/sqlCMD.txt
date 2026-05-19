@@ -143,3 +143,43 @@ create view vw_student_results as
 select res.student_id, stu.full_name name, res.score mark, res.exam_type
 from students as stu, results as res
 where res.student_id = stu.id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Create table
+create table TableNameInPlural
+(
+ ColumnName DataType Attribute(optional),   
+ ColumnName DataType Attribute(optional),  
+ ColumnName DataType Attribute(optional)   
+);
+
+   // Example
+    create table students
+    (
+    id int unsigned primary key auto_increment,
+    name varchar(100) not null,
+    email varchar(120) unique,
+    address varchar(255),
+    is_inactive tinyint default 0
+    );
+
+
+CREATE TABLE brands
+(
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(100) NOT NULL
+);
+
+INSERT INTO results(student_id, score, exam_type)
+    values (18, 20, "Mid-1");
